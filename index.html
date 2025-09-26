@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kişisel Blog - Beyza Uysal</title>
+  <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+  <header class="ustcubuk">
+    <nav class="menu">
+      <a class="marka" href="#anasayfa">Beyza Uysal</a>
+      <a href="#hakkimda">Hakkımda</a>
+      <a href="#beceriler">Beceriler</a>
+      <a href="#projeler">Projeler</a>
+      <a href="#medya">Medya</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+  </header>
+
+  <main id="anasayfa" class="icerik">
+    <section id="hakkimda" class="hakkimda-bolum">
+      <img src="assets/profile.jpg" alt="Profil fotoğrafı" class="profil-foto">
+      <div>
+        <h1>Hakkımda</h1>
+        <p>
+          Ben Beyza Uysal, Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim ve aslen Antalyalıyım. Kendimi geliştirmek için çeşitli projeler üzerinde çalışıyor, aynı zamanda Udemy gibi eğitim platformlarından eğitimler alıyorum. Yazılım dünyasında farklı dilleri araştırarak ve konferanslara katılarak ilgi alanlarımı keşfetme fırsatı buldum. Bu deneyimler sayesinde yönelmek istediğim alanı belirledim ve artık bu doğrultuda kararlı bir şekilde ilerliyorum. Şu an da aktif bir projem var onun üzerine çalışıyorum. Geri kalan zamanlarımda kendime yöneliyorum.
+        </p>
+      </div>
+    </section>
+
+    <section id="beceriler">
+      <h2>Beceriler</h2>
+      <ul class="beceri-listesi">
+        <li>HTML, CSS, JavaScript</li>
+        <li>C ve C#</li>
+        <li>Swift ve SwiftUI</li>
+        <li>Python</li>
+        <li>Java ve Java Swing</li>
+        <li>MySQL</li>
+      </ul>
+    </section>
+
+    <section id="projeler">
+      <h2>Projeler</h2>
+      <div class="kartlar">
+        <article class="kart">
+          <h3>BPM</h3>
+          <p>Parmakla nabız ölçümü yapan bir mobil uygulama. <a href="https://github.com/beyzauysal/BPM" target="_blank" rel="noopener">BPM</a></p>
+        </article>
+        
+      </div>
+    </section>
+
+    <section id="medya">
+      <h2>Medya</h2>
+      <p>Aşağıda projemin nasıl çalıştığına dair bir video bulunmaktadır.</p>
+      <video controls class="video" >
+        <source src="assets/intro.mp4" type="video/mp4">
+        Tarayıcınız video etiketini desteklemiyor.
+      </video>
+    </section>
+
+    <section id="iletisim">
+      <h2>İletişim</h2>
+      <p>Email: <a href="mailto:uysalbeyza27@gmail.com">uysalbeyza27@gmail.com</a></p>
+      <p>Linkedin: <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p>GitHub: <a href="https://github.com/beyzauysal" target="_blank">GitHub</a></p>
+    </section>
+  </main>
+
+  <footer class="altbilgi">
+    <small>© <span id="yil"></span> Beyza Uysal — Öğrenci No: 2221032002</small>
+  </footer>
+
+  <script>document.getElementById("yil").textContent = new Date().getFullYear();</script>
+</body>
+</html>
